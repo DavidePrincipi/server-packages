@@ -79,7 +79,7 @@ cp %{SOURCE1} %{buildroot}/etc/httpd/conf.d
 
 
 %changelog
-* Wed Mar 15 2017 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 11.0.2
+* Wed Mar 15 2017 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 11.0.2-1
 - Update to release 11.0.2
 - Move installation inside /usr/share/nextcloud
 - Switch to php-fpm
