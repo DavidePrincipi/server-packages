@@ -13,7 +13,7 @@
 Summary: Nextcloud package
 Name: nextcloud
 Version: %nextcloud_version
-Release: 1%{?dist}
+Release: 1.4%{?dist}
 License: GPL
 Source: https://download.nextcloud.com/server/releases/nextcloud-%{nextcloud_version}.tar.bz2
 Source1: nextcloud.conf
@@ -76,9 +76,10 @@ cp %{SOURCE1} %{buildroot}/etc/httpd/conf.d
 
 %defattr(0644,%{nc_user},%{nc_group},0755)
 
-
-
 %changelog
+* Fri Apr 07 2017 Davide Principi <davide.principi@nethesis.it> - 11.0.2-1.4
+- NextCloud WebDAV authentication failure - Bug NethServer/dev#5263
+
 * Wed Mar 15 2017 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 11.0.2-1
 - Update to release 11.0.2
 - Move installation inside /usr/share/nextcloud
